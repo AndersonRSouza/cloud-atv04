@@ -25,3 +25,6 @@ host: 'localhost',
   user: 'root',
   password: '123',
   database: 'aula_cloud_04'
+
+PARA EXECUTAR A APLICAÇÃO
+docker pull andersonrsouza/aulacloud:0.0.1
