@@ -35,7 +35,7 @@ app.get("/readiness", (request, response) => {
 const connection = mysql.createConnection({
   host: 'localhost',
   user: 'root',
-  password: 'RootPassword',
+  password: '',
   database: 'aula_cloud_04'
 });
 
