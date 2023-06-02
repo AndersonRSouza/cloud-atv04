@@ -1,3 +1,13 @@
+PARA BAIXAR A APLICAÇÃO
+docker pull andersonrsouza/aulacloud:0.0.1
+
+link Github e DockerHub
+https://github.com/AndersonRSouza/cloud-atv04 e https://hub.docker.com/repository/docker/andersonrsouza/aulacloud/general
+
+PARA QUE FUNCIONE O BANCO DE DADOS E A APLICAÇÃO FAZER O DOWNLOAD DOS SEGUINTES PROGRAMAS WORCKBENCH E XAMPP
+https://dev.mysql.com/downloads/workbench/
+https://www.apachefriends.org/download.html
+
 CREATE DATABASE aula-cloud-04;
 
 CREATE TABLE Clientes (
@@ -21,10 +31,9 @@ VALUES (2, 'Maria', 'Santos', 'maria@email.com', '987654321', 'Avenida B', 'Rio 
 INSERT INTO Clientes (customer_id, primeiro_nome, último_nome, email, número_telefone, endereço, cidade, estado, código_postal)
 VALUES (3, 'Pedro', 'Ferreira', 'pedro@email.com', '654321987', 'Praça C', 'Belo Horizonte', 'MG', '54321-876');
 
+CASO NÃO ENCONTRE NO CÓDIGO ESSE SÃO OS DADOS PARA O BANCO
 host: 'localhost',
   user: 'root',
-  password: '123',
+  password: '',
   database: 'aula_cloud_04'
 
-PARA EXECUTAR A APLICAÇÃO
-docker pull andersonrsouza/aulacloud:0.0.1
