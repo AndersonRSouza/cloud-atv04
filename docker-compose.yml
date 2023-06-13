@@ -17,7 +17,7 @@ services:
             - exe04
     
     nodejs:
-        image: andersonrsouza/aulacloud:0.0.1
+        image: andersonrsouza/atvfinal:0.0.2
         container_name: nodejs
         restart: always
         ports:
