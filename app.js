@@ -33,15 +33,18 @@ app.get("/readiness", (request, response) => {
 });
 
 const connection = mysql.createConnection({
-  host: 'localhost',
+  host: 'mysql',
+  port: 3306,
   user: 'root',
-  password: '',
-  database: 'aula_cloud_04'
+  password: 'root',
+  database: 'db_aula'
 });
+
+
 
 connection.connect((err) => {
   if (err) {
-    console.error('Erro ao conectar ao banco de dados:', err);
+    console.error('Erro teste ao conectar ao banco de dados:', err);
     return;
   }
   console.log('Conexão estabelecida com o banco de dados!');

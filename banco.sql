@@ -1,5 +1,3 @@
-USE cloud-atv04;
-
 CREATE TABLE Clientes (
   customer_id INT PRIMARY KEY,
   primeiro_nome VARCHAR(50),

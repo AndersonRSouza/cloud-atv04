@@ -1,0 +1,31 @@
+version: '3'
+services:
+    mysql:
+        image: mysql:latest
+        container_name: mysql
+        restart: always
+        environment:
+            MYSQL_ROOT_PASSWORD: root
+            MYSQL_DATABASE: db_aula
+            MYSQL_USER: user
+            MYSQL_PASSWORD: passwd
+        volumes:
+          - ./banco.sql:/docker-entrypoint-initdb.d/banco.sql
+        ports:
+            - 3306:3306
+        networks:
+            - exe04
+    
+    nodejs:
+        image: andersonrsouza/aulacloud:0.0.1
+        container_name: nodejs
+        restart: always
+        ports:
+            - 3000:3000
+        networks:
+            - exe04
+        depends_on:
+            - mysql
+
+networks:
+    exe04:
